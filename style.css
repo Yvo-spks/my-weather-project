@@ -1,5 +1,81 @@
-h1{
-    text-align: center;
-    color: blueviolet;
-    font-size: 50px;
+.weather-demo {
+    display: block;
+    margin: 0 auto;
+    padding: 30px 15px;
+    font-weight: 600;
+    width:600px;
+    background: radial-gradient(1224px at 10.6% 8.8%,
+            rgb(255, 255, 255) 0%,
+            rgb(153, 202, 251) 100.2%);
+    background: linear-gradient(to right,
+            #e4afcb 0%,
+            #b8cbb8 0%,
+            #b8cbb8 0%,
+            #e2c58b 30%,
+            #c2ce9c 64%,
+            #7edbdc 100%);
+    background: linear-gradient(90.4deg,
+            rgb(255, 220, 163) 21.2%,
+            rgb(129, 255, 239) 90.7%);
 }
+
+.search-icon {
+    padding: 25px 5px;
+}
+
+.pin {
+    width: 250px;
+}
+
+h1 .data {
+    position: relative;
+    left: -35px;
+    display: block;
+    text-align: left;
+    color: #534f4f;
+    font-size: 20px;
+    list-style: none;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    color: #ffa726;
+}
+
+.temperature {
+    position: absolute;
+    top: 180px;
+    padding: 20px 10px;
+    color: #474f62;
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 150ms ease-in-out;
+}
+
+.temp {
+    text-decoration: none;
+    color: #534f4f;
+}
+
+h3 .types {
+    display: block;
+    text-align: right;
+    color: #6c7384;
+    list-style: none;
+    font-size: 16px;
+}
+
+span {
+    color: #e72828;
+}
+
+.week-day {
+    position: relative;
+    top: -50px;
+    text-align: center;
+    color: #29334b;
+    font-weight: 600;
+    padding-top: 20px;
+}
+

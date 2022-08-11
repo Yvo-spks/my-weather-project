@@ -4,19 +4,8 @@
     padding: 30px 15px;
     font-weight: 600;
     width:600px;
-    background: radial-gradient(1224px at 10.6% 8.8%,
-            rgb(255, 255, 255) 0%,
-            rgb(153, 202, 251) 100.2%);
-    background: linear-gradient(to right,
-            #e4afcb 0%,
-            #b8cbb8 0%,
-            #b8cbb8 0%,
-            #e2c58b 30%,
-            #c2ce9c 64%,
-            #7edbdc 100%);
-    background: linear-gradient(90.4deg,
-            rgb(255, 220, 163) 21.2%,
-            rgb(129, 255, 239) 90.7%);
+    background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
+    
 }
 
 .search-icon {

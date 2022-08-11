@@ -24,12 +24,14 @@ h1 .data {
     color: #534f4f;
     font-size: 20px;
     list-style: none;
+   
 }
 
 h2 {
     display: block;
     text-align: center;
     color: #ffa726;
+    
 }
 
 .temperature {

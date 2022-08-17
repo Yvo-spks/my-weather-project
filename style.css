@@ -1,16 +1,17 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .weather-demo {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 11px;
-    padding: 30px 15px;
-    font-weight: 600;
-    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    font-weight: 500;
+    max-width: 600px;
     border: 1px solid #fff;
     border-radius: 4px;
     box-shadow:1px 1px 2px rgba(0, 0, 0, 0.2); 
     background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 .search-icon {
@@ -29,6 +30,7 @@ h1 .data {
     color: #534f4f;
     font-size: 20px;
     list-style: none;
+    line-height: 28px;
    
 }
 
@@ -74,16 +76,4 @@ span {
     padding-top: 20px;
 }
 
-a{
- display: inline;
- margin: 4px;
-font-size: 14px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-span {
-    display: inline;
-    margin:auto;
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}

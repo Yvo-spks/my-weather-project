@@ -1,12 +1,13 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.weather-demo {
-    display: block;
+.weather-demo-wrapper {
     margin: 30px auto;
+    max-width: 600px;
+}
+.weather-demo {
     padding: 20px;
     font-weight: 500;
-    max-width: 600px;
     border: 1px solid #fff;
     border-radius: 4px;
     box-shadow:1px 1px 2px rgba(0, 0, 0, 0.2); 
@@ -75,5 +76,9 @@ span {
     font-weight: 600;
     padding-top: 20px;
 }
+
+
+
+
 
 

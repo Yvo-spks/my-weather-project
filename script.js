@@ -28,6 +28,15 @@ function searchResult(event) {
 let searchIcon = document.querySelector("#search-icon");
 searchIcon.addEventListener("click", searchResult);
 
+function formatDate(timestamp) {
+ let currentDate = new Date(timestamp);
+ let hours = currentDate.getHours();
+ let minutes = currentDate.getMinutes();
+ let day = currentDate.getDay();
+
+ return `${day} ${hour}:${minutes}`; 
+}
+
 function showTemperature(response) {
   let currentTempElement = document.querySelector("#change-temp");
   currentTempElement.innerHTML = `${Math.round(response.data.main.temp)} °C`;
@@ -43,6 +52,9 @@ function showTemperature(response) {
 
   let description = document.querySelector("#temperature-description");
   description.innerHTML = `${response.data.weather[0].main}`;
+
+  let currentDateElement = document.querySelector("#current-date");
+  currentDateElement.innerHTML= formatDate(response.data.dt * 1000);
 }
 function searchLocation(position) {
   let apiKey = "22600970cc1e19a65b9eea57b485b5ac";

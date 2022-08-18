@@ -31,8 +31,15 @@ searchIcon.addEventListener("click", searchResult);
 function formatDate(timestamp) {
  let currentDate = new Date(timestamp);
  let hours = currentDate.getHours();
+ if (hours < 10) {
+  minutes = `0${hours}`;
+ }
  let minutes = currentDate.getMinutes();
- let day = currentDate.getDay();
+ if (minutes < 10) {
+  minutes = `0${minutes}`;
+ }
+ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+ let day =days[currentDate.getDay()];
 
  return `${day} ${hours}:${minutes}`; 
 }

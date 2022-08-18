@@ -34,10 +34,11 @@ function formatDate(timestamp) {
  let minutes = currentDate.getMinutes();
  let day = currentDate.getDay();
 
- return `${day} ${hour}:${minutes}`; 
+ return `${day} ${hours}:${minutes}`; 
 }
 
 function showTemperature(response) {
+
   let currentTempElement = document.querySelector("#change-temp");
   currentTempElement.innerHTML = `${Math.round(response.data.main.temp)} °C`;
 
@@ -55,6 +56,9 @@ function showTemperature(response) {
 
   let currentDateElement = document.querySelector("#current-date");
   currentDateElement.innerHTML= formatDate(response.data.dt * 1000);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 function searchLocation(position) {
   let apiKey = "22600970cc1e19a65b9eea57b485b5ac";

@@ -55,7 +55,10 @@ h2 {
     color: #474f62;
     font-size: 30px;
     transition: all 150ms ease-in-out;
+
 }
+
+
 
 .temp {
     text-decoration: none;
@@ -83,6 +86,15 @@ span {
     padding-top: 20px;
 }
 
+.temperature .active {
+    color:#474f62 ;
+    cursor: default;
+    text-decoration: none;
+}
+
+.temperature .active:hover {
+    text-decoration: none;
+}
 
 
 

@@ -88,7 +88,7 @@ span {
 
 .temperature .active {
     color:#474f62 ;
-    cursor: default;
+    cursor: pointer;
     text-decoration: none;
 }
 

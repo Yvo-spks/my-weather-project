@@ -95,15 +95,19 @@ span {
     padding-top: 20px;
 }
 
-.temperature .active {
-    color:#474f62 ;
+ .units .active {
+    color: #534f4f;
     cursor: default;
     text-decoration: none;
 }
 
-.temperature .active:hover {
+.units .active:hover {
+    
     text-decoration: none;
+    
 }
+
+
 
 
 

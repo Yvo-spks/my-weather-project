@@ -27,7 +27,7 @@ let humidity = document.querySelector("#humidity");
 let wind = document.querySelector("#wind");
 let dateElement = document.querySelector("#date");
 
-temperatureElement.innerHTML = Math.round(response.data.main.temp);
+temperatureElement.innerHTML = `${Math.round(response.data.main.temp)}`
 cityElement.innerHTML = response.data.name;
 descriptionElement.innerHTML= response.data.weather[0].description;
 humidity.innerHTML = response.data.main.humidity;
@@ -38,7 +38,7 @@ dateElement.innerHTML= formatDate(response.data.dt * 1000)
 
 
 let apiKey = "22600970cc1e19a65b9eea57b485b5ac";
-let city = "Paris"
+let city = "London"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
 
 

@@ -41,25 +41,31 @@ h1 .data {
     text-transform: capitalize;
    
 }
-
-
-
+ 
 h2 {
-    display: block;
-    text-align: center;
-    color: #ffa726;
+text-align: center;
+
+}
+
+
     
+    
+
+  .temperature  {
+   position: relative;
+   top:-150px;
+   left:15px;
+   padding: 20px 10px;
+   color: #474f62;
+   font-size: 40px;
+  transition: all 150ms ease-in-out;
 }
 
-.temperature {
-    position: absolute;
-    top: 180px;
-    padding: 20px 10px;
-    color: #474f62;
-    font-size: 30px;
-    transition: all 150ms ease-in-out;
-
-}
+ .units {
+    position: relative;
+    top:-240px;
+    right: -70px;
+ }
 
 
 

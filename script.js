@@ -70,10 +70,21 @@ function showcelsiusTemperature(event) {
 temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
 }
+function searchLocation(position) {
+  let apiKey = "22600970cc1e19a65b9eea57b485b5ac";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(searchLocation);
+}
 
 let celsiusTemperature = null;
 
+let buttonCurrentLocation = document.querySelector("#current-location-button");
+buttonCurrentLocation.addEventListener("click", getCurrentLocation);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit",handleSubmit);

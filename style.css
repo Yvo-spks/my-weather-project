@@ -1,6 +1,6 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
+    background: linear-gradient(99.6deg, rgb(188, 197, 210) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
     
 }
 .weather-demo-wrapper {
@@ -12,8 +12,8 @@ body{
     font-weight: 500;
     border: 1px solid #fff;
     border-radius: 4px;
-    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.2); 
-    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    box-shadow:1px 1px 2px rgba(7, 7, 7, 0.2); 
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(36, 43, 47) 24.5%, rgb(21, 33, 41) 66%);
     
 }
 
@@ -70,13 +70,14 @@ text-align: center;
     position: relative;
     top:-240px;
     right: -70px;
+
  }
 
 
 
 .temp {
     text-decoration: none;
-    color: rgb(225, 216, 216);
+    color: rgb(255, 255, 255);
 }
 
 h3 .types {

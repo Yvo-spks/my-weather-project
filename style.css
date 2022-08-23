@@ -1,5 +1,6 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
     
 }
 .weather-demo-wrapper {
@@ -112,10 +113,19 @@ span {
     text-decoration: none;
     
 }
+footer{
+    text-align: center;
+    font-size: 14px;
+    
+}
 
+a {
+    text-decoration: none;
+    color: rgb(41, 39, 39);
+}
 
-
-
-
+a:hover {
+ color: rgb(68, 68, 186);
+}
 
 

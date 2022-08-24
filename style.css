@@ -16,13 +16,21 @@ background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     
     
 }
-
 .search-form {
     padding: 25px 5px;
-    
-    
-    
+   
 }
+
+.button-location {
+    border: 0.5px;
+    border-radius: 4px;
+}
+
+.button-search {
+    border: 0.5px;
+        border-radius: 4px;
+    }
+
 
 input {
     outline: none;
@@ -32,7 +40,13 @@ input {
 
 .pin {
     width: 200px;
-}
+    border-radius: 8px;
+    border: 0.5px;
+    font-size: 14px;
+    }
+    
+    
+
 
 h1 .data {
     position: relative;

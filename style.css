@@ -141,4 +141,10 @@ a:hover {
  color: rgb(68, 68, 186);
 }
 
+.weather-forecast{
+    position: relative;
+    right: -30px;
+    text-align: center;
+}
+
 

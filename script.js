@@ -17,6 +17,31 @@ function formatDate(timestamp){
 
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHtml= `<div class="row">`;
+  let days= ["Thurs","Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function(day){
+
+    forecastHtml= forecastHtml + `
+    <div class="col-2">
+       ${day} <br>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/189/original/Mostly_Sunny.png?1660058235"
+            alt="" width=35>
+            <br>
+            
+                23°|14° <br>
+
+            </div> `;
+     });
+  
+
+    forecastHtml = forecastHtml + `</div>`;
+  forecastElement.innerHTML= forecastHtml;
+
+}
+
 
 
 function showTemperature(response) {
@@ -27,6 +52,8 @@ let humidity = document.querySelector("#humidity");
 let wind = document.querySelector("#wind");
 let dateElement = document.querySelector("#date");
 let iconElement = document.querySelector("#icon")
+
+
 
 celsiusTemperature = response.data.main.temp
 
@@ -83,6 +110,8 @@ function getCurrentLocation(event) {
 
 let celsiusTemperature = null;
 
+
+
 let buttonCurrentLocation = document.querySelector("#current-location-button");
 buttonCurrentLocation.addEventListener("click", getCurrentLocation);
 
@@ -96,3 +125,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click",showcelsiusTemperature);
 
 search("Rome")
+displayForecast();

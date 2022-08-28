@@ -149,7 +149,8 @@ a:hover {
 
 .weather-forecast{
     position: relative;
-    right: -30px;
+    right: -25px;
+    left: -10px;
     text-align: center;
 }
 

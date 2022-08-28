@@ -1,18 +1,24 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    padding: 100px 50px;
+    background: radial-gradient(600px at 48.2% 50%, rgba(153, 153, 151, 0.6) 0%, rgb(160, 199, 254) 74.6%);
     
 }
 .weather-demo-wrapper {
     margin: 30px auto;
     max-width: 650px;
+    
 }
 .weather-demo {
-    padding: 20px;
+    padding: 10px 15px;
     font-weight: 500;
-    border: 1px solid #fff;
-    border-radius: 4px;
-background: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    border:1px solid rgba(200, 241, 241, 0.3);
+    border-radius: 30px;
+    margin: 0;
+    box-shadow: 8px 4px 5px 10px rgba(0, 0, 0, 0.3);
+    
+    
+
     
     
 }
@@ -64,7 +70,7 @@ h1 .data {
     left: -35px;
     display: block;
     text-align: left;
-    color: rgb(40, 38, 38);
+    color: rgb(27, 26, 26);
     font-size: 20px;
     list-style: none;
     line-height: 28px;
@@ -86,7 +92,7 @@ text-align: center;
    top:-150px;
    left:15px;
    padding: 20px 10px;
-   color: rgb(35, 33, 33);
+   color: rgb(27, 26, 26);
    font-size: 40px;
   transition: all 150ms ease-in-out;
 }
@@ -110,7 +116,7 @@ h3 .types {
     position: relative;
     top: -40px;
     text-align: right;
-    color: rgb(40, 38, 38);
+    color: rgb(27, 26, 26);
     list-style: none;
     font-size: 16px;
 }
@@ -135,6 +141,7 @@ span {
 footer{
     text-align: center;
     font-size: 14px;
+    padding: 8px;
     
 }
 

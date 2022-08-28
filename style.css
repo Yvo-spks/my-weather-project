@@ -77,6 +77,8 @@ h1 .data {
 }
  
 h2 {
+    position: relative;
+    bottom: -50px;
 text-align: center;
 
 }

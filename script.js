@@ -17,7 +17,8 @@ function formatDate(timestamp){
 
 }
 
-function displayForecast() {
+function displayForecast(response) {
+
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHtml= `<div class="row">`;
@@ -42,7 +43,12 @@ function displayForecast() {
 
 }
 
-
+function getForecast(coordinates) {
+  
+let apiKey = "22600970cc1e19a65b9eea57b485b5ac";
+let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+axios.get(apiUrl).then(displayForecast)
+}
 
 function showTemperature(response) {
 let temperatureElement = document.querySelector("#temperature");
@@ -65,6 +71,8 @@ wind.innerHTML = Math.round(response.data.wind.speed);
 dateElement.innerHTML= formatDate(response.data.dt * 1000)
 iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`)
 iconElement.setAttribute("alt",response.data.weather[0].description);
+
+getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -95,22 +103,22 @@ function showcelsiusTemperature(event) {
   celsiusLink.classList.add("active");
   fahrenhietLink.classList.remove("active");
 temperatureElement.innerHTML = Math.round(celsiusTemperature);
-
 }
+
 function searchLocation(position) {
   let apiKey = "22600970cc1e19a65b9eea57b485b5ac";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
 
+
 function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+
 let celsiusTemperature = null;
-
-
 
 let buttonCurrentLocation = document.querySelector("#current-location-button");
 buttonCurrentLocation.addEventListener("click", getCurrentLocation);
@@ -124,5 +132,4 @@ fahrenhietLink.addEventListener("click",showFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click",showcelsiusTemperature);
 
-search("Rome")
-displayForecast();
+search("Rome");

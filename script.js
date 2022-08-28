@@ -16,25 +16,36 @@ function formatDate(timestamp){
    
 
 }
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed","Thur","Fri", "Sat"];
+
+  return days[day];
+
+}
 
 function displayForecast(response) {
-
+let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHtml= `<div class="row">`;
   let days= ["Thurs","Fri", "Sat", "Sun", "Mon"];
-  days.forEach(function(day){
+  forecast.forEach(function(forecastDay, index){
+    if(index < 6) {
 
     forecastHtml= forecastHtml + `
     <div class="col-2">
-       ${day} <br>
-        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/189/original/Mostly_Sunny.png?1660058235"
+       ${formatDay(forecastDay.dt)} <br>
+        <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
             alt="" width=35>
             <br>
             
-                23°|14° <br>
+                ${Math.round(forecastDay.temp.max)}°|${Math.round(forecastDay.temp.min)}° <br>
 
             </div> `;
+            }
+
      });
   
 

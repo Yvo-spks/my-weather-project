@@ -6,7 +6,7 @@ body{
 }
 .weather-demo-wrapper {
     margin: 30px auto;
-    max-width: 650px;
+    max-width: 950px;
     
 }
 .weather-demo {
@@ -93,7 +93,7 @@ text-align: center;
    left:15px;
    padding: 20px 10px;
    color: rgb(27, 26, 26);
-   font-size: 40px;
+   font-size: 45px;
   transition: all 150ms ease-in-out;
 }
 

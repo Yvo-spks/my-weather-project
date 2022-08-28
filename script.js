@@ -38,7 +38,7 @@ let forecast = response.data.daily;
     <div class="col-2">
        ${formatDay(forecastDay.dt)} <br>
         <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
-            alt="" width=35>
+            alt="" width=45>
             <br>
             
                 ${Math.round(forecastDay.temp.max)}°|${Math.round(forecastDay.temp.min)}° <br>

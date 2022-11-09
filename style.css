@@ -161,4 +161,17 @@ a:hover {
     text-align: center;
 }
 
+@media (max-width:900px) {
+    .weather-demo-wrapper {
+        max-width:500px ;
+    }
+}
+
+@media (min-width:567px) {
+    .weather-demo-wrapper {
+        max-width: 500px;
+    }
+}
+
+
 

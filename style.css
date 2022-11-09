@@ -161,11 +161,7 @@ a:hover {
     text-align: center;
 }
 
-@media (max-width:900px) {
-    .weather-demo-wrapper {
-        width: 500px;
-    }
-}
+
 
 
 

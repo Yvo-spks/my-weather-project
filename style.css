@@ -167,11 +167,7 @@ a:hover {
     }
 }
 
-@media (min-width:576px) {
-    .weather-demo-wrapper {
-        width: 500px;
-    }
-}
+
 
 
 

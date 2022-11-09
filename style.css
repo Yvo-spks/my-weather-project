@@ -163,7 +163,7 @@ a:hover {
 
 @media (max-width:900px) {
     .weather-demo-wrapper {
-        max-width:500px ;
+        max-width:400px ;
     }
 }
 
